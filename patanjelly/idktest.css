@@ -1,0 +1,76 @@
+.Password{
+    position: absolute; 
+    top:60%; left:65%;
+    color: #81ff7f; 
+    font-size: 20px; font-family: 'Balsamiq Sans', cursive;
+}
+#password{
+    border:none; 
+    width: 200px; height:40px; 
+    border-radius: 15px; 
+    position: absolute; 
+    top:65%; left:65%; 
+    font-size: 20px ; padding: 10px; font-family: 'Balsamiq Sans', cursive;
+    outline: none;
+}
+.Email{
+    position: absolute; 
+    top:45%; left:65%;  
+    color: #81ff7f; 
+    font-size: 20px; font-family: 'Balsamiq Sans', cursive; 
+}
+#email{
+    border:none; 
+    width: 200px; height:40px; 
+    border-radius: 15px; 
+    position: absolute; 
+    top:50%; left:65%; 
+    font-size: 20px ;  padding: 10px; font-family: 'Balsamiq Sans', cursive; 
+    outline: none;
+}
+.Email:hover{
+    animation: pop 0.5s ease;
+}
+.Password:hover {
+    animation: pop 0.5s ease;
+}
+#Log{
+    border:none; 
+    width: 120px; height:50px; 
+    border-radius: 15px; 
+    position: absolute; 
+    top:77%; left:73%; 
+    font-size: 20px ;   font-family: 'Balsamiq Sans', cursive;
+    line-height: 50px; 
+    outline: none;
+    background-color: #085a06;
+    color:white;
+    transition: all 0.3s ease;
+}
+#Sign{
+    border:none; 
+    width: 120px; height:50px; 
+    border-radius: 15px; 
+    position: absolute; 
+    top:77%; left:63%; 
+    font-size: 20px ;   font-family: 'Balsamiq Sans', cursive;
+    line-height: 50px; 
+    outline: none;
+    background-color: #085a06;
+    color:white;
+    transition: all 0.3s ease;
+}
+.scamtxt, .scamtxt2{
+    transition: all 0.3s ease;
+}
+#scam:hover, #scam2:hover{
+    transform: rotateX(180deg);
+}
+#scam:hover .scamtxt, #scam2:hover .scamtxt2{
+    transform: rotateX(-180deg);
+}
+@keyframes pop{
+    0% {font-size: 20px;}
+    50% {font-size: 25px;}
+    100%{font-size: 20px;}
+}

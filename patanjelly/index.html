@@ -1,0 +1,58 @@
+<html>
+<head>
+
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="idktest.css">
+           <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+ 
+<script defer src="idktest.js"></script>
+
+</head>
+
+    <body style="padding: 0; margin: 0; background-image: url('bg.png'); background-size: cover;">
+        
+
+        <img src="patanjelly.png" style="position: absolute; top:29%; left:13%; height: 17vh; width: auto;">
+        <form>
+
+            <div class="Email"> Email:</div>
+            <div class="mail"><input id="email" type="email" placeholder="Email"></div>
+
+            <div class="Password" > Password:</div>
+            <div class="pass"><input id="password" type="password" minlength="8" placeholder="Password"></div>
+
+            <button id="Log"><div class="scamtxt">Log In</div> </button>
+            
+            <button id="Sign"><div class="scamtxt2">Sign Up</div> </button>
+        </form>
+
+        <p style="position:absolute; top:46%; left: 13%; font-size: 40px; font-family: 'Balsamiq Sans', cursive; color: #81ff7f; width:30vw">
+            Preserve the Earth <br> by donating to Patanjelly.
+        </p>
+ 
+        
+
+        <script>
+          var firebaseConfig = {
+          apiKey: "AIzaSyAewzozIPaivtzwfuewNxv6im59_honHLU",
+          authDomain: "patanjelly-daf61.firebaseapp.com",
+          databaseURL: "https://patanjelly-daf61.firebaseio.com",
+          projectId: "patanjelly-daf61",
+          storageBucket: "patanjelly-daf61.appspot.com",
+          messagingSenderId: "418960315078",
+          appId: "1:418960315078:web:4f201fe5059223ab057dc7",
+          measurementId: "G-GNQG64WERX"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+    </script>
+    </body>
+</html>
+
