@@ -14,7 +14,7 @@ Log.addEventListener('click', e =>{
     const promise = auth.signInWithEmailAndPassword(email, password);
 
     promise.catch ( e =>{ console.log(e.message);
-        window.alert('thanks for logging in.');
+       alert('Thank you for logging in.');
     });
 });
 
@@ -26,7 +26,7 @@ Sign.addEventListener('click', e =>{
     const promise = auth.createUserWithEmailAndPassword(email, password);
 
     promise.catch ( e =>{ console.log(e.message);
-        window.alert('Congratz! YOU are now a member.');
+        alert('Congratz! You are now a member!');
     });
 });
 
