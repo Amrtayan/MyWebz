@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'gotham';
+    src: url('homepagebaukasten-book-webfont.ttf') format('truetype');
+    font-weight: 1000;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Gotham-light';
+    src: url('Metropolis-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+::-webkit-scrollbar{
+    width:0px;
+}
+:root{
+    font-family: gotham-light;
+    color: white;
+    scroll-behavior: smooth;
+}
+body{
+    padding:0;
+    margin: 0;
+    background-color: #171717;
+    overflow-x: hidden;
+}
+.navbar{
+    position: fixed;
+    list-style-type: none;
+    top:0;
+    display: flex;
+    align-items: center;
+    height:60px;
+    width:90%;
+    justify-content: flex-end;
+    z-index: 3;
+}
+.nav-bg{
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 3;
+    height:70px;
+    background-color: #171717;
+    
+}
+.navbar li{
+    color: white;
+    font-size: 20px;
+    width:70px;
+    height: auto;
+    padding: 10px 20px;
+    overflow:hidden;
+    text-align: right;
+
+}
+.navbar a{
+    text-decoration: none;
+}
+.nav-line{
+    transform: translateX(-85px);
+    border: 2px solid #ac4545; 
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+.navbar li:hover .nav-line{
+    transform: translateX(-10px);
+}
+.top{
+    width:100%;
+    height: auto;
+}
+.title{
+    position: absolute;
+    top:30%; left:10%;
+    border-left: 30px solid #ac4545;
+    height: 120px;
+    line-height: 90px;
+    font-size: 25px;
+    z-index: 2;
+}
+.titletxt{
+    position: absolute;
+    left:11%; top: 50%;
+    font-size: 20px;
+    z-index: 2;
+}
+.gunhead{
+    height: auto; 
+    width: 45vw; 
+    position: absolute; 
+    top:25%; 
+    right:10vw; 
+    z-index: -1;
+}
+.book{
+    position: absolute;
+    left:11%; top: 68%;
+    outline: none;
+    border: 3px solid white;
+    padding: 20px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    width:90px;
+    font-family: gotham;
+    overflow: hidden;
+    cursor: pointer;
+}
+.book-bg{
+    position: absolute;
+    outline: none;
+    background-color:#ac4545;
+    padding: 30px 30px;
+    z-index: -1;
+    width:90px;
+    transform: translate(-180px, -40px);
+    transition: all 0.3s ease;
+}
+.book:hover{
+    color:white;
+}
+.book:hover .book-bg{
+    transform: translate(-30px, -40px);
+}
+.synopsis{
+    position: relative;
+    top: 120vh;
+    width:100%;
+    height:40vh;
+    transform: translateZ(100) 
+}
+.synopsis-head{
+    border-bottom: 10px solid #ac4545;
+    float: right;
+    width: 120px;
+    position: relative;
+    right:100px; top:-60px;
+
+}
+.synopsistxt{
+    position: relative;
+    line-height: 30px; 
+    float:right;
+    width:37vw;
+    height:auto;
+    text-align: right;
+    top:75px; right:-30px;
+    z-index: 2;
+}
+.trailer{
+    position: absolute;
+    top:200vh;
+    width:100%;
+    height:auto;
+}
+.credits{
+    position: absolute;
+    top: 300vh;
+    width:100%;
+    height: auto;
+}
+.talent{
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 165px;
+    height: auto;
+    font-size: 30px;
+}
+.talent-border{
+    margin: 0 auto;
+    border-bottom: 10px solid #ac4545;
+    width: 80px;
+    height: auto;
+    font-size: 30px;
+}
+.cred td{
+    padding: 50px 80px;
+}
+.book-shows{
+    position: absolute;
+    top: 500vh;
+    width:100%;
+    height: auto;
+}
+.shows{
+    position: relative;
+    margin: 0 auto;
+    padding:0;
+    width: 180px;
+    height: auto;
+    font-size: 30px;
+}
+.show-border{
+    position: relative;
+    margin: 0 auto;
+    border-bottom: 10px solid #ac4545;
+    width: 100px;
+    height: auto;
+    font-size: 30px;
+    top:10px;
+}
+.dates{
+    color: #ac4545;
+}
+#dates{
+    color: #ac4545;
+}
+.footer{
+    position: absolute;
+    top: 600vh;
+    width:100%;
+    height:600px;
+}
+.no-border{
+    border-right: none !important;
+}
+.book-shows table td {
+    border-right: 1px solid #3b3b3b;
+    text-align:center;
+}
+.book-shows table td a{
+    text-decoration: none;
+    color:white;
+    transition: color 0.3s ease;
+}
+.book-shows table td a:hover{
+    color:#ac4545;
+}
+
+/* Phone */
+
+@media screen and (max-device-width : 450px){
+    .gunhead{
+        height: auto; 
+        width: 45vw; 
+        position: absolute; 
+        top:10%; 
+        right:10vw; 
+        z-index: -1;
+    } 
+    .title{
+        position: absolute;
+        top:11%; left:10%;
+        border-left: 30px solid #ac4545;
+        height: 120px;
+        line-height: 90px;
+        font-size: 25px;
+        z-index: 2;
+    }
+    .titletxt{
+        position: absolute;
+        left:11%; top: 19%;
+        font-size: 20px;
+        z-index: 2;
+
+    }
+    .book{
+        position: absolute;
+        left:11%; top: 26%;
+        outline: none;
+        border: 3px solid white;
+        padding: 20px;
+        font-size: 15px;
+        background-color: transparent;
+        color: white;
+        width:90px;
+        font-family: gotham;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .book-bg{
+        position: absolute;
+        outline: none;
+        background-color:#ac4545;
+        padding: 30px 30px;
+        z-index: -1;
+        width:90px;
+        transform: translate(-180px, -40px);
+        transition: all 0.3s ease;
+    }
+    .synopsis{
+        position: relative;
+        top: 41vh;
+        width:100%;
+        height:40vh;
+        transform: translateZ(100); 
+    }
+    .trailer{
+        top:71vh;
+    }
+    .credits{
+        position: absolute;
+        top: 110vh;
+        width:100%;
+        height: auto;
+    }
+    .book-shows{
+        position: absolute;
+        top: 190vh;
+        width:100%;
+        height: 100vh;
+    }
+}
+
+/*tablet*/
+
+@media screen and (min-device-width : 450px) and (max-device-width : 1024px){
+    .gunhead{
+        height: auto; 
+        width: 45vw; 
+        position: absolute; 
+        top:10%; 
+        right:10vw; 
+        z-index: -1;
+    } 
+    .title{
+        position: absolute;
+        top:11%; left:10%;
+        border-left: 30px solid #ac4545;
+        height: 120px;
+        line-height: 90px;
+        font-size: 25px;
+        z-index: 2;
+    }
+    .titletxt{
+        position: absolute;
+        left:11%; top: 19%;
+        font-size: 20px;
+        z-index: 2;
+
+    }
+    .book{
+        position: absolute;
+        left:11%; top: 26%;
+        outline: none;
+        border: 3px solid white;
+        padding: 20px;
+        font-size: 15px;
+        background-color: transparent;
+        color: white;
+        width:90px;
+        font-family: gotham;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .book-bg{
+        position: absolute;
+        outline: none;
+        background-color:#ac4545;
+        padding: 30px 30px;
+        z-index: -1;
+        width:90px;
+        transform: translate(-180px, -40px);
+        transition: all 0.3s ease;
+    }
+    .synopsis{
+        position: relative;
+        top: 41vh;
+        width:100%;
+        height:40vh;
+        transform: translateZ(100); 
+    }
+    .trailer{
+        top:71vh;
+    }
+    .credits{
+        position: absolute;
+        top: 125vh;
+        width:100%;
+        height: auto;
+    }
+    .book-shows{
+        position: absolute;
+        top: 230vh;
+        width:100%;
+        height: 100vh;
+    }
+}
