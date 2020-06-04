@@ -1,0 +1,279 @@
+<html>
+    <style>
+        html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-corner{
+    background: transparent;
+}
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    background-color: #383636;
+    border-right: 5px transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #5CB0FF;
+    height: 10px;
+    border-radius: 15px;
+}
+body{
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family: 'bauhaus_93regular';
+    src: url('webfontkit-20200512-135221/bauhaus_93_regular-webfont.woff2') format('woff2'),
+         url('webfontkit-20200512-135221/bauhaus_93_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.top{
+    min-height: 100vh; 
+    min-width: 98.7vw; 
+    background:url(bgbotyes.png);
+    background-size: cover; 
+    background-attachment:fixed;
+    background-position: center;
+}
+.link{
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    float: right;
+    right: 0;
+    top:10vh;
+    background-color:#383636; ;
+    min-width: 10vw;
+    min-height: 5vh;
+    padding:10px 8px;
+}
+.link img{
+    position: relative;
+    width:40px;
+    height:auto;
+    margin: 0 10px;
+}
+#hm1{
+    border: solid 0.15vh #92F8C4;
+    width:30px;
+    margin: 0.9vh 0;
+    background-color: #F4FFF8;
+    position: relative;
+    top:1vw;
+    transition: transform 0.5s ease;   
+}
+#hm2{
+    border: solid 0.15vh #92F8C4;
+    width:25px;
+    margin: 0.9vh 0;
+    background-color: #F4FFF8;
+    position: relative;
+    top:1vw;
+    transition: opacity 0.2s, margin 0.3s;
+}
+#hm3{
+    border: solid 0.15vh #92F8C4;
+    width:30px;
+    margin: 0.9vh 0;
+    background-color: #F4FFF8;
+    position: relative;
+    top:1vw;
+    transition: transform 0.5s ease;
+}
+.navopt{
+    color:#ddddd7;
+    font-size: 25px;
+    font-family: 'Titillium Web',Arial,sans-serif; 
+    position: relative;
+    left:5.5vw;
+    float:left;
+    padding:8px 16px;   
+    display: none;
+    height:40px;
+    width:auto;
+    
+}
+.navopt:hover{
+    background-color: #5CB0FF;
+    color:#ddddd7;
+}
+.head{
+    font-family: 'bauhaus_93regular'; 
+    font-size: 100px; color:#5CB0FF; 
+    top:25vh; 
+    left:12.4vw; 
+    position: relative;
+}
+.idiom{
+    font-family: 'Titillium Web',Arial,sans-serif; 
+    font-size: 30px; color: #ddd; 
+    position: relative; 
+    top:14vh; 
+    left:16vw; 
+    width:50%;
+}
+.facts{
+    font-family: 'Titillium Web',Arial,sans-serif; 
+    color:#92F8C4;
+    font-size: 20px;
+    position: relative;
+    width:30vw;
+    left:25vw;
+    top:15vh;
+}
+.facts li{
+    padding: 1vh;
+}
+
+.nav{
+    position: fixed;
+    left:4.5vw;
+    top:2.5vh;
+    width:3vw;
+    float:left;
+    height: auto;
+    z-index: 101;
+    transition: transform 0.3s ease;
+}
+
+#navlaiy{
+    display: none;
+    height: 4vw;
+    width: 18vw;
+    z-index: 100;
+    border-radius: 10px;
+    background-color: #383636;
+    position: fixed;
+    top: 2.5vh;
+    left: 4vw;
+    overflow: hidden;
+}
+#navlaiy.navlay{
+    display: block;
+    height: 4vw;
+    width: 18vw;
+    z-index: 100;
+    border-radius: 10px;
+    background-color: #383636;
+    position: fixed;
+    top: 2.5vh;
+    left: 4vw;
+    animation: noicee 0.5s forwards;
+}
+#navlaiy.navley{
+    display: block;
+    height: 4vw;
+    width: 18vw;
+    z-index: 100;
+    border-radius: 10px;
+    background-color: #383636;
+    position: fixed;
+    top: 2.5vh;
+    left: 4vw;
+    animation: noice 0.5s forwards;
+}
+.social:hover{
+    transform: scale(1.3);
+}
+.rainbowhead {  
+    display: block; 
+    position: absolute; 
+    top:35vh;
+    left:30vw;
+    font-size:20vh;
+    font-family: 'bauhaus_93regular';
+    color: #5CB0FF;
+}
+.staff{
+    position: absolute;
+    font-size: 50px;;
+    top:65%;
+    left:27%;
+    font-family:'bauhaus_93regular';
+}
+.staffinfo{
+    position:absolute;
+    border-radius:15px; 
+    background-color: #211F1F; 
+    color:#DDDDD7;
+    padding:16px 8px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+@keyframes noicee{
+    0% {width:420px;}
+    100% {width:0;}
+}
+@keyframes noice{
+   from {width:1px;}
+   to {width:420px;}
+}
+@keyframes swim{
+    0% {transform: translateY(00);}
+    25% {transform: translateY(3vh);}
+    50% {transform: translateY(-3vh);}
+    100%{transform: translateY(0);}
+}
+    </style>
+
+    <body style="margin: 0; padding: 0;">
+
+        <div class="nav" id="navy" onclick="woah()" >
+            <hr id='hm1'></hr>
+            <hr id='hm2'></hr>
+            <hr id='hm3'></hr>
+        </div>
+
+        <div id="navlaiy" class= "navlaiy">      
+            <a href="botweb.html"><span class="navopt" id="Home">Home</span></a>          
+            <a href="http://bgbot.xyz:8080/selector"><span class="navopt" id="dboard">Dashboard</span></a>
+            <a href="staff.html"><span class="navopt" id="staff" style="background-color: #5CB0FF;">Staff</span></a>
+            <a href="https://youtu.be/kyNseWYM3vU"><span class="navopt" id="idk">Features</span></a>
+        </div>
+
+        <script src="botjava.js"></script>
+       
+<section id="middle" class="middle" style="min-height: 100vh; min-width: 98.7vw; background-attachment: fixed; background-color:#302e2e; background-size: cover; position: relative;">
+        
+    <img src="staff.png" style="top:10%; left:30%; height:300px; width: auto; position: absolute;">        
+            <h1 class="rainbowhead">Our Staff</span></h1>
+            <h1 class="staff" style="color:rgb(253, 45, 45)">Those who made it possible...</h1>
+
+</section>
+<div style="font-size:20px; font-family:'Titillium Web',Arial,sans-serif; z-index:100; background-color: #211F1F; color:#DDDDD7; height:auto; width:100%;margin: 0; line-height: 50px; text-align: center;">Bot-developer</div>
+
+ <section id="middle2" class="middle2" style="min-height: 100vh; min-width: 98.7vw; background-attachment: fixed; background-image:url('grayaldbg.jpg'); background-size: cover; position: relative;">
+    
+    <img src="grayaldpfp.png" style="top:15%; left:5%; position: absolute; height:25vw; width:auto;">
+    <div class="staffinfo" style= "font-size: 40px; top:70%; left:11.5%;">🔰 Ɠяαуαℓ∂ 🔰
+        #2529</div>
+        <div class="staffinfo" style="float:right; right:10vw; top:15vh; height: 10vh; width:30vw;">"YEAH IDK WHAT TO RITE"</div>
+        <div class="staffinfo" style="float:right; right:10vw; top:35vh; height: 50vh; width: 30vw; font-size:20px;">Has taken YEARS to build this thing.</div>
+</section>
+
+ <div style="font-size:20px; font-family:'Titillium Web',Arial,sans-serif; z-index:100; background-color: #211F1F; color:#DDDDD7; height:auto; width:100%;margin: 0; line-height: 50px; text-align: center;">Designer</div>
+
+
+ <section id="middle3" class="middle3" style="min-height: 100vh; min-width: 98.7vw; background-attachment: fixed; background-image:url('holybg.jpg'); background-size: cover; position: relative;">
+    <img src="holypfp.png" style="top:17%; left:12%; position: absolute; height:25vw; width:auto;">
+    <div class="staffinfo" style= "font-size: 40px; top:73%; left:11.5%;">Ho_Leaf_Hucc #2870</div>
+    <div class="staffinfo" style="float:right; right:10vw; top:15vh; height: 10vh; width:30vw; font-size: 35px; text-align: center; line-height: 10vh;">"I love bananas <img src="https://discord.com/assets/d963d0ebb1bc7743dc37568e3b7c5cfb.svg" style="height:35px; width:auto;">"</div>
+        <div class="staffinfo" style="float:right; right:10vw; top:35vh; height: 50vh; width: 30vw; font-size:20px;"> </div>
+</section>
+
+<div style="font-size:20px; font-family:'Titillium Web',Arial,sans-serif; z-index:100; background-color: #211F1F; color:#DDDDD7; height:auto; width:100%;margin: 0; line-height: 50px; text-align: center;">Content-Creator</div>
+
+<section id="middle4" class="middle3" style="min-height: 100vh; min-width: 98.7vw; background-attachment: fixed; background-image:url('melonbg.jpg'); background-size: cover; position: relative;">
+    <div class="staffinfo" style= "font-size: 40px; top:70%; left:11.5%;">M-elon Musk #4332</div>
+        
+    <img src="melonpfp.png" style="top:15%; left:9%; position: absolute; height:25vw; width:auto;">
+    <div class="staffinfo" style="float:right; right:10vw; top:15vh; height: 10vh; width:30vw;">"YEAH IDK WHAT TO RITE"</div>
+        <div class="staffinfo" style="float:right; right:10vw; top:35vh; height: 50vh; width: 30vw; font-size:20px;">Has taken YEARS to build this thing.</div>
+</section>
+</body>
+</html>
